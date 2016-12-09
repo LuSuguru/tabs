@@ -1,0 +1,82 @@
+:global {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+//定义外部选项
+.operator {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+//定义Tabs
+.bar {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+//定义TabNavs
+.nav {
+  font-size: 14px;
+
+  &:after,
+  &:before {
+    display: table;
+    content: " ";
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+//定义TabNavs的各列表项
+.tab {
+  float: left;
+  list-style: none;
+  margin-right: 24px;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+//定义选中的列表项
+.tabActive {
+  color: #00C49F;
+  cursor: default;
+}
+
+//内容项默认样式
+.panel {
+  display: none;
+}
+
+//内容项出现
+.content {
+  display: block;
+}
+
+//内容项消失
+.contentActive {
+  display: block;
+}
+
+//定义滚动条
+.inkBar {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  box-sizing: border-box;
+  height: 2px;
+  background-color: #00C49F;
+  z-index: 1;
+} 

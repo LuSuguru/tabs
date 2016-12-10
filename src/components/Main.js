@@ -7,7 +7,7 @@ require('styles/App.scss');
 import React, { Component } from 'react';
 import Tabs from 'components/Tabs';
 import Tabpane from 'components/TabPane';
-import emitter from 'components/events';
+import Emitter from 'components/events';
 
 class App extends Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class App extends Component {
 
     handleChange(e) {
         let index = parseInt(e.target.value, 10);
-        emitter.emit('itemChange', index);
+        Emitter.emit('itemChange', index);
 
         this.setState({
             activeIndex: index,
